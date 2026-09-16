@@ -30,3 +30,7 @@ print(f"Exercise: {exercise}")
 print(f"Weight: {weight}")
 print(f"Sets: {sets}")
 print(f"Reps: {reps}")
+
+with open("workouts.txt", "a") as file:
+    file.write(f"Exercise: {exercise}, Weight: {weight}, Sets: {sets}, Reps: {reps}\n")
+
