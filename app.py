@@ -1,10 +1,31 @@
 print("Workout Tracker")
 exercise = input("What exercise did you do? ")
-weight = input("How much weight did you use? ")
-sets = input("How many sets did you do? ")
-reps = input("How many reps did you do? ")
 
-print("--- Your Workout ---")
+while True:
+    try:
+        weight = int(input("How much weight did you use? "))
+    except ValueError:
+        print("Please enter a number. Try again.")
+    else:break
+
+while True:
+    try:
+        sets = int(input("How many sets did you do? "))
+    except ValueError:
+        print("Please enter a number. Try again.")
+    else:
+        break
+
+while True:
+    try:
+        reps = int(input("How many reps did you do? "))
+    except ValueError:
+        print("Please enter a number. Try again.")
+    else:
+        break
+    
+
+print("\n--- Your Workout ---")
 print(f"Exercise: {exercise}")
 print(f"Weight: {weight}")
 print(f"Sets: {sets}")
