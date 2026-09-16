@@ -1,4 +1,10 @@
 from datetime import date #importing the date module to get the current date
+from flask import Flask # importing the Flask class from the flask module to create a web application
+
+app = Flask(__name__)
+@app.route("/")
+def home():
+    return "Welcome to the Workout Tracker!"
 
 def show_menu(): # function to display main menu options
     print("\nWelcome to the Workout Tracker!")
@@ -54,3 +60,6 @@ while True:
         break
     else:
         print("Invalid option. Please try again.")
+
+if __name__ == "__main__":
+    app.run(debug=True)

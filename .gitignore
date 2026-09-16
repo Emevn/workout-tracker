@@ -1,2 +1,3 @@
 workouts.txt 
 # Ignore the workouts.txt file, which may contain sensitive or personal information related to fitness routines.
+venv/
