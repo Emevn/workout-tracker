@@ -1,1 +1,5 @@
 print("Workout Tracker")
+exercise = input("What exercise did you do? ")
+weight = input("How much weight did you use? ")
+sets = input("How many sets did you do? ")
+reps = input("How many reps did you do? ")
